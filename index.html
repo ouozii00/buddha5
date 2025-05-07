@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<title>돌부처 서비스</title>
+	<style>
+		.black-han-sans-regular {
+						  font-family: "Black Han Sans", sans-serif;
+						  font-weight: 400;
+						  font-style: normal;}
+  		 @font-face {
+            font-family: 'ChosunGu';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+	body,h1,h2,p,o1,ul{margin: 0;padding: 0}
+		
+		.flex{display: flex; justify-content: space-between;}
+		.wrap{width: 1000px; margin: auto; border: 1.3px solid #ffffff; border-radius: 30px; padding-right: 20px; padding-left: 20px;}
+		.wrap2{width: 1000px; margin: auto;}
+		.wrap3{width: 1000px; margin: auto; text-align: center;}
+        .wrap4{width: 1300px; margin: auto; text-align: center;}
+        .position{position: relative;}
+        .position1{position: absolute;}
+		.menu{width: 350px;}
+	li{list-style-type: none}
+	h1{font-family: "Black Han Sans"; font-weight: normal; font-size: 10.5rem; word-break: keep-all; text-align: center;
+			line-height: 1.7;}
+	h2{font-family: "Black Han Sans"; font-weight: normal; word-break: keep-all;
+			line-height: 1.7;}
+	h3{font-family: "Black Han Sans"; font-weight: normal; word-break: keep-all;
+			line-height: 1.7;}
+	p{font-family: 'ChosunGu'; word-break: keep-all; line-height: 1.9; font-size: 1.3rem;}
+
+	.menu li a{text-decoration: none;
+				color: white;
+				padding: 10px;
+				display: block;
+				font-family: "Black Han Sans"}
+	.menu li a:hover{ color: white; text-decoration: underline; transition: all 1s;}
+
+	.logo{padding: 10px; color: white; font-family: "Black Han Sans"}
+	.logo1{padding: 3px; margin: 0;}
+	.top-spacing{padding-top: 5px;}
+	.top-spacing1{padding-top: 200px;}
+	.top-spacing2{padding-top: 50px;}
+	.bottom-spacing{padding-bottom: 5px;}
+	.bottom-spacing1{padding-bottom: 200px;}
+	.left-spacing{padding-left: 200px;}
+    .left-spacing1{padding-left: 468px;}
+	.skewed-text {
+    transform: skewX(-15deg); /* 텍스트를 -10도 기울임 */}
+    .red{background: #ff0000}
+     nav:last-of-type .menu li a {
+            color: black; /* 검은색으로 설정 */
+            font-family: "Gothic A1", sans-serif; 
+        	font-size: 10px; font-size: 12.5px;}
+
+    .bg-p1{background:url(Frame 3.png);}
+    .back-black{background-color: black;}
+    .back-y{background-color: #fff200;}
+
+    .font-red{color: #ff0000;}
+    .font-white{color: white;}
+    .img-style{width: 700px}
+    .img-style1{width: 1000px}
+    .gothicA1{
+            font-family: "Gothic A1", sans-serif; 
+        	font-size: 12px;
+    }
+    .img-grad-wrap {
+        width: 1000px;
+		position: relative;
+		display: inline-block;
+    }
+    .img-grad-wrap img {width: 100%;
+	  					display: block;}
+	.back-black img:hover {
+		transform: scale(1.02);
+		box-shadow: 0 0 30px rgba(255,255,255,0.2);
+		}
+
+		/* 이 클래스가 있는 이미지는 호버 효과 무시 */
+		.back-black img.no-hover:hover {
+		transform: none !important;
+		box-shadow: none !important;
+		}
+	.img-gradient {position: absolute;
+				  left: 0;
+				  bottom: 0;
+				  width: 100%;
+				  height: 150px;
+				  z-index: 2;
+				  background: linear-gradient(to bottom, 
+				    rgba(255,255,255,1) 0%,   
+				    #91F6FF 100%);
+				  pointer-events: none;}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.back-black img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 30px rgba(255,255,255,0.2);
+}
+
+
+#agno3:hover {
+  transform: scale(1.07) !important;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.749) !important;
+  cursor: pointer;
+}
+
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+.blink-text {
+  animation: blink 2s ease-in-out infinite;
+  color: rgb(26, 235, 235);
+
+}
+
+	</style>
+</head>
+<body>
+	<nav class="flex top-spacing bottom-spacing red" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+		<div class="wrap flex" style="height: 45px; align-items: center;">
+			<div class="logo skewed-text" style="font-size: 1.4rem; padding-top: 14px; display: flex; align-items: center;">돌부처 서비스</div>
+			<ul class="menu flex" style="align-items: center; padding-top: 5px;">
+				<li class="skewed-text" style="font-size: 1.2rem; display: flex; align-items: center;"><a href="index.html">intro</a></li>
+				<li class="skewed-text" style="font-size: 1.2rem; display: flex; align-items: center;"><a href="about.html">상세설명</a></li>
+				<li class="skewed-text" style="font-size: 1.2rem; display: flex; align-items: center;"><a href="service.html">제품설명</a></li>
+				<li class="skewed-text" style="font-size: 1.2rem; display: flex; align-items: center;"><a href="buy.html">구매안내</a></li>	
+			</ul>
+		</div>
+	</nav>
+	<nav class="" style="margin-top: 57px;">
+		<div class="wrap2 flex" style="height: 28px;" style="padding-top: 10px">
+			<div class="logo1">
+				<img src="data_loss_prevention.png "style="width:24%" "padding-top: 10px">
+				<img src="local_mall.png" style="width:24%">
+				<img src="person.png" style="width:24%">
+			 </div>
+			<ul class="menu flex" style="width: 320px">
+				<li><a href="#">회원가입</a></li>
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">주문조회</a></li>
+				<li><a href="#">최근 본 상품</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	<header>
+		<div class="wrap4 position" style="height: 500px; padding-top: 30px;">
+
+  <img src="s.png" alt="배경 이미지" style="width:80%; display: block; margin: 0 auto;">
+
+  
+  <img src="spinbu.gif" alt="부처 이미지" 
+       style="width:28%; position: absolute; top: 20%; left: 36%;">
+       
+  <img src="a.png" alt="말풍선 이미지" 
+       style="width:30%; position: absolute; top: 10%; left: 65%; padding-bottom: 20px;">
+</div>
+        <div  class="skewed-text wrap3" style="padding-top: 75px;" >
+			<h1>
+				돌부처 서비스
+			</h1>
+		</div>
+	</header>
+	<section>
+		<div class="top-spacing position" style="position: relative; text-align: center;">
+          
+          <img src="Frame 3.png" style="width:100%; display: block;">
+
+          
+          <h2 class="skewed-text"
+              style="
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) skewX(-15deg);
+                color: black;
+                font-size: 4.5rem;
+                margin: 0;
+                white-space: nowrap;">
+            !!부처님과 함께 마음의 평화를 되찾으세요!!
+          </h2>
+        </div>
+		<div class="wrap3" style="padding-left: 316px;">
+			<img src="qnek.png" style="width:30%">
+            <img src="Group9.png" style="width:30%; padding-bottom: 10px;">
+        </div>
+        <div  class="wrap3">
+			<p style="padding-bottom: 50px; padding-top: 30px;">화가나는 상황에 딱 맞춰<br>우리를 찾아오는 부처님과 함께</p>
+			<p class="top-spacing2">마음의 평화와 열반을 찾아보세요...</p>
+        </div>
+        <div style="text-align: center;">
+			<p style="padding-bottom: 100px; background: linear-gradient(to bottom, white, #91F6FF);
+">&lt;PEACE&gt;</p>
+        </div>
+	</section>
+	<section>
+		<div class="back-black" style="text-align: center;">
+			<h2 class="skewed-text font-white" style="font-size: 6.5rem; padding-top: 15px;">
+				안그래도 힘든데!
+			</h2>
+			<div style="
+				width: 80%;
+				margin: auto;
+				padding-top: 50px;
+				padding-bottom: 50px;
+			">
+				<img 
+					src="agno3.gif" 
+					id="agno3"
+					style="
+						width: 100%;
+						display: block;
+						transition: all 0.3s ease-in-out;
+						border-radius: 23px;
+					"
+				>
+			</div>
+			<img src="paragraph.png" class="no-hover" style="width: 100%; display: block;">
+
+			<p class="font-white" style="padding-top: 100px; padding-bottom: 120px;">
+				사람 때문에 화가 나는 일이 많은가요?<br>
+				스트레스의 근원을 없애버리고 싶나요?
+			</p>
+		</div>
+	</section>
+	<section>
+		<div class="back-y">
+			<div class="scroll-container" style="overflow: hidden; white-space: nowrap; position: relative;">
+			  <div style="display: flex;">
+				<h2 class="font-red skewed-text scroll-text" style="
+				  font-size: 3.5rem;
+				  height: 86px;
+				  animation: scrollText 6s linear infinite;
+				  padding-right: 50px;
+				  white-space: nowrap;
+				">
+				  !!더이상 참지 마세요!! &nbsp;&nbsp;&nbsp;&nbsp;
+				  !!더이상 참지 마세요!! &nbsp;&nbsp;&nbsp;&nbsp;
+				  !!더이상 참지 마세요!! &nbsp;&nbsp;&nbsp;&nbsp;
+				</h2>
+				<h2 class="font-red skewed-text scroll-text" style="
+				  font-size: 3.5rem;
+				  height: 86px;
+				  animation: scrollText 6s linear infinite;
+				  padding-right: 50px;
+				  white-space: nowrap;
+				">
+				  !!더이상 참지 마세요!! &nbsp;&nbsp;&nbsp;&nbsp;
+				  !!더이상 참지 마세요!! &nbsp;&nbsp;&nbsp;&nbsp;
+				  !!더이상 참지 마세요!! &nbsp;&nbsp;&nbsp;&nbsp;
+				</h2>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<section style="text-align: center;">
+		<p style="padding-top: 150px;"> 당신의 소중한 평화를 깨뜨리는 소음과 민폐, <br>
+			이제 부처님 속에 가둬버리세요!
+			</p>
+		<p class="blink-text" style="padding-top: 100px;">
+			･:*:･｡마음의 열반을 찾아보세요･:*:･｡
+		</p>
+		<p style="padding-top: 100px; padding-bottom: 30px;"> 편안한 마음가짐, 스트레스 없는 생활<br>
+					지금 바로 시작됩니다!
+				</p>
+	</section>
+
+   <section class="wrap2" style="text-align: center; position: relative;">
+  <div>
+    <!-- 내용 필요시 삽입 -->
+  </div>
+  <div style="position:relative; width:100vw; left:50%; right:50%; margin-left:-50vw; margin-right:-50vw; height:700px; overflow:hidden;">
+    <img
+      src="grade.png"
+      style="
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: auto;
+        z-index: 1;
+        display: block;">
+    <img
+      src="g1-18.png"
+      style="
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        width: 1000px;
+        height: auto;
+        transform: translateX(-50%);
+        z-index: 2;
+        display: block;">
+  </div>
+</section>
+
+
+	<footer class="red">
+		<div class="wrap2 font-white">
+			<div style="display: flex; justify-content: space-between; align-items: center; padding-top: 30px;">
+				  <h3 class="skewed-text" style="margin: 0; font-size: 1.8rem;">
+				    돌부처 서비스
+				  </h3>
+				  <img src="Group9.png" style="width: 15%;">
+			</div>
+			<div>
+				<p class="gothicA1">
+					서비스 소개 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이용 약관 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개인정보 처리 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;방침 이용 안내
+				</p>
+			</div>
+			<div style="display: flex; gap: 50px; padding: 0; flex-wrap: wrap; justify-content: flex-start;">
+			  <p class="gothicA1" style="padding-top:30px; padding-bottom: 50px; text-align: left; width: 300px;">
+			    쇼핑몰 기본정보 <br>
+			    상호명 돌부처서비스<br>
+			    대표자명 Buddhaiseverywhere<br>
+			    사업장 주소 XXXXX 서울시 성북구 북악산로 XXX XXX-XX<br>
+			    대표 전화 XXX-XXXX-XXXX<br>
+			    사업자 등록번호 3713108
+			  </p>
+			  <p class="gothicA1" style="padding-top:30px; padding-bottom: 50px; text-align: left; width: 300px;">
+			    <br>CUSTOMER CENTER<br>
+			    02-970-XXXX<br>
+			    평일 : 00:00-24:00 | 실시간 문의 >>대환영<<br>
+			    연중무휴 / CS : Buddhaiseverywhere@stone.co.kr<br>
+			    기업은행 XXX-XXXXXX-XX-XXX | 예금주: Buriburi
+			  </p>
+			  <p class="gothicA1" style="padding-top:30px; padding-bottom: 50px; text-align: left; width: 300px; text-align: right;">
+			   <br><br><br><br><br> ©2025 우지은 모든 권리 보유.
+			  </p>
+			</div>
+		
+
+		</div>
+	</footer>
+</body>
+</html>
